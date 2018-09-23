@@ -1,1 +1,3 @@
-# ECSE437lab2
+# ECSE 437: Lab exercise #2
+
+See the printout for more information.
