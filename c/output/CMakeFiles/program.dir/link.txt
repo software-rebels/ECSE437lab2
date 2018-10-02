@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/program.dir/input.c.o CMakeFiles/program.dir/job.c.o CMakeFiles/program.dir/main.c.o  -o program 
