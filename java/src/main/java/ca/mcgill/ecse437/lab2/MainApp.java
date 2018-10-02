@@ -12,6 +12,7 @@ import java.nio.file.Paths;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.commons.io.FileUtils;
 
 
 public class MainApp {
@@ -36,6 +37,9 @@ public class MainApp {
         Job job = new Job(entry.toFile());
         logger.info(String.format("Job %d yields %d\n", job.getInput(), job.processJob()));
       }
+
+      FileUtils.deleteDirectory(dir.toFile());
+
     } catch (IOException e) {
       e.printStackTrace();
     }
